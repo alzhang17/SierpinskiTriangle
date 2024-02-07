@@ -45,7 +45,7 @@ public void timer(){
     start = millis();
   }
  
-  if((millis()-start)/1000 == 10){
+  if((millis()-start)/1000 >= 10){
     lenth -= lenth;
     start = -1;
     textShow = !textShow;

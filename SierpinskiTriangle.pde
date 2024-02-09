@@ -12,15 +12,16 @@ void setup(){
 void draw(){
   background(0);
   sierpinski(xside, yside, lenth);
-  timer();
 }
 
 void mousePressed(){
   if(lenth < 900)
      lenth+=40;
-  
-  
+  else{
+    lenth = 21;
+  }
 }
+
 
 public void sierpinski(int x, int y, int len){
   if(len <= max){
@@ -32,7 +33,7 @@ public void sierpinski(int x, int y, int len){
   }
 }
 
-public void timer(){
+/*public void timer(){
   textSize(30);
   if(start != -1 && textShow){
     text((millis()-start)/1000, 200, 200);
@@ -51,3 +52,4 @@ public void timer(){
     textShow = !textShow;
   }
 }
+*/
